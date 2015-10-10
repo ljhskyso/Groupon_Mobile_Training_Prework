@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipViewController">
+            <connections>
+                <outlet property="billLable" destination="Q2t-Ye-93r" id="OKQ-gE-sWL"/>
+                <outlet property="billTextField" destination="B3C-Tv-caM" id="H5L-eP-Lqf"/>
+                <outlet property="historyButton" destination="kRf-wY-5FJ" id="hkN-4B-VYT"/>
+                <outlet property="saveButton" destination="pvo-cT-1Xg" id="2N1-cA-mhJ"/>
+                <outlet property="separaterLabel" destination="ZKA-c1-xHw" id="O9c-U6-TXw"/>
+                <outlet property="tipAmountLabel" destination="FyP-mJ-8k9" id="AhV-VN-pX0"/>
+                <outlet property="tipControl" destination="xGO-Kq-KZk" id="o24-is-5Kh"/>
+                <outlet property="tipLabel" destination="g0L-Es-ndl" id="Mlc-8F-P57"/>
+                <outlet property="tipRateLabel" destination="8bv-SY-0pX" id="Kmf-TS-nce"/>
+                <outlet property="tipSlider" destination="WcS-MG-aQC" id="GO1-Dq-HYS"/>
+                <outlet property="totalLabel" destination="pir-0g-oGB" id="ihO-3h-zbc"/>
+                <outlet property="totalTextLabel" destination="snj-XW-lFV" id="k7Z-BL-yjq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whiteBlockView" destination="1PG-GB-ngE" id="1bw-20-oXU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2t-Ye-93r">
+                    <rect key="frame" x="8" y="127" width="23" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyP-mJ-8k9">
+                    <rect key="frame" x="8" y="183" width="89" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3C-Tv-caM">
+                    <rect key="frame" x="194" y="123" width="173" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    <connections>
+                        <action selector="billTextDidChange:" destination="-1" eventType="editingChanged" id="KBU-cx-Xgx"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$3.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0L-Es-ndl">
+                    <rect key="frame" x="225" y="183" width="142" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-c1-xHw">
+                    <rect key="frame" x="0.0" y="225" width="375" height="7"/>
+                    <color key="backgroundColor" red="0.5252525252525253" green="0.5252525252525253" blue="0.5252525252525253" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snj-XW-lFV">
+                    <rect key="frame" x="8" y="257" width="89" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xGO-Kq-KZk">
+                    <rect key="frame" x="8" y="317" width="359" height="29"/>
+                    <segments>
+                        <segment title="10%"/>
+                        <segment title="15%"/>
+                        <segment title="20 %"/>
+                    </segments>
+                    <connections>
+                        <action selector="controlValueChanged:" destination="-1" eventType="valueChanged" id="dnl-5d-9Ex"/>
+                        <action selector="onTap:" destination="-1" eventType="valueChanged" id="zlC-Wy-b3L"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pir-0g-oGB">
+                    <rect key="frame" x="105" y="250" width="262" height="58"/>
+                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="35"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WcS-MG-aQC">
+                    <rect key="frame" x="42" y="353" width="290" height="31"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="YEX-aH-5Bj"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bv-SY-0pX">
+                    <rect key="frame" x="116" y="183" width="142" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRf-wY-5FJ">
+                    <rect key="frame" x="8" y="391" width="50" height="30"/>
+                    <state key="normal" title="History"/>
+                    <connections>
+                        <action selector="onHistoryButton:" destination="-1" eventType="touchUpInside" id="fkr-0u-Cao"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvo-cT-1Xg">
+                    <rect key="frame" x="333" y="391" width="34" height="30"/>
+                    <state key="normal" title="Save"/>
+                    <connections>
+                        <action selector="saveOnTap:" destination="-1" eventType="touchUpInside" id="A2J-h1-0iX"/>
+                    </connections>
+                </button>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1PG-GB-ngE">
+                    <rect key="frame" x="0.0" y="257" width="375" height="164"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="NT0-ii-ijK" appends="YES" id="42f-Go-2ST"/>
+            </connections>
+            <point key="canvasLocation" x="412.5" y="359.5"/>
+        </view>
+        <tapGestureRecognizer id="NT0-ii-ijK">
+            <connections>
+                <action selector="onTap:" destination="-1" id="3XD-HC-BvB"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
